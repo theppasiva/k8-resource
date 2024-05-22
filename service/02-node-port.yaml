@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx-nodeport
   labels:
-    app: nginx
+    app: nginx-nodeport
     demo: service
 spec:
   containers:

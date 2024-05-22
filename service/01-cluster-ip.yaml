@@ -4,6 +4,7 @@ metadata:
   name: nginx-pod
   labels:
     app: nginx
+    # here with this line port wil not be opened, just for information
     demo: service
 spec:
   containers:
