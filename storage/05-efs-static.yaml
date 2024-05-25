@@ -41,7 +41,7 @@ spec:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    zone: 1d
+    zone: 1b
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
@@ -56,6 +56,6 @@ spec:
   selector:
     demo: efs-static
   ports:
-    - protocol: TCP
-      port: 80 #service-poart
-      targetPort: 80 #container-port
+  - protocol: TCP
+    port: 80 #service-port
+    targetPort: 80 #container-port
