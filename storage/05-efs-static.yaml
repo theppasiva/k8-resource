@@ -41,7 +41,7 @@ spec:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    zone: 1b
+    zone: 1c # we should change this zone according to worker node resource
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
